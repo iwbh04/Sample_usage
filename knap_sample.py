@@ -1,24 +1,24 @@
 # After `$ pip install TextVault`
 
 from TextVault import KnapsackEncryptor, KnapsackKey
-txt = "Hello, World!"
+txt = "Hello, World! 😀"
 enc = KnapsackEncryptor()
 
 pub, priv = enc.newkey()
-a = enc.encrypt(txt, pub)
-A = enc.decrypt(a, priv)
+encrypted = enc.encrypt(txt, pub)
+decrypted = enc.decrypt(encrypted, priv)
 
 print("Public key:", pub)
 print("Private key:", priv)
 print()
 
 print("Original:", txt)
-print("Encrypted:", a)
-print("Decrypted:", A)
+print("Encrypted:", encrypted)
+print("Decrypted:", decrypted)
 print()
 
 pub.export_txt("knap_public_key.txt")
-pub2 = KnapsackKey.import_txt("knap_public_key.txt")
+pub_2 = KnapsackKey.import_txt("knap_public_key.txt")
 
 print("Original Key:", pub)
-print("After Save & Load:", pub2)
+print("After Save & Load:", pub_2)
