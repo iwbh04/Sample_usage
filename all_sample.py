@@ -1,3 +1,5 @@
+# Read https://github.com/iwbh04/Sample_usage/issues/1
+
 from TextVault import *
 # --------------------------------------------------
 print("\n--------------------------------------------------\n** Knapsack **\n")
