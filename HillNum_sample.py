@@ -1,4 +1,4 @@
-from TextVault import Hillciperwithnumbers
+from TextVault import Hillcipherwithnumbers
 
 if __name__ == "__main__":
     cipher = Hillcipherwithnumbers(size=2)
